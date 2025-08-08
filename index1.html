@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NGO Website</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  
+  <header>
+    <nav class="navbar">
+      <h1>NGO</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#volunteer">Volunteer</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section id="home" class="section home-section">
+    <h2>Welcome to our NGO</h2>
+    <p>We are committed to making the world a better place by connecting volunteers with impactful projects.</p>
+  </section>
+
+
+  <section id="about" class="section about-section">
+    <h2>About Us</h2>
+    <p>Our NGO is a non-profit organization working tirelessly to uplift underprivileged communities through education, healthcare, and skill development programs.</p>
+  </section>
+
+
+  <section id="volunteer" class="section volunteer-section">
+    <h2>Become a Volunteer</h2>
+    <form id="volunteerForm">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="message">Why do you want to volunteer?</label>
+      <textarea id="message" name="message" placeholder="Write your reason here..." required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+    <p id="formMessage" class="success-message"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 NGO | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
